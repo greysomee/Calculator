@@ -24,7 +24,7 @@ jobs:
         working-directory: pkgs/samples/
     steps:
       - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
-      - uses: subosito/flutter-action@48cafc24713cca54bbe03cdc3a423187d413aafa
+      - uses: subosito/flutter-action@2783a3f08e1baf891508463f8c6653c258246225
       - run: flutter pub get
       - run: flutter analyze
       - run: dart format --set-exit-if-changed .
